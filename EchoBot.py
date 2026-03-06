@@ -31,7 +31,7 @@ if "messages" not in st.session_state:
 
 
     # React to user input
-  if prompt := st.chat_input("What is up?"):
+if prompt := st.chat_input("What is up?"):
         # Display user message in chat message container
         st.chat_message("user").markdown(prompt)
 
